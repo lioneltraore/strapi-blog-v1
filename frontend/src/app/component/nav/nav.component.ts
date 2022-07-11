@@ -24,7 +24,7 @@ export class NavComponent implements OnInit {
       .watchQuery({
         query: CATEGORIES_QUERY,
       })
-      .valueChanges.subscribe(({data, loading, errors}) => {// CategoryResponseArray
+      .valueChanges.subscribe(({data, loading, errors}) => {
         console.log('-- result --', data);
         const result = data as CategoryResponseArray;
         this.data = result.categories.data;

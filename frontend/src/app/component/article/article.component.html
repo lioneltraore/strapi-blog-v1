@@ -1,0 +1,21 @@
+<div
+  id="banner"
+  class="uk-img uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding"
+  [style.background-image]="
+    'url(http://localhost:1337' + article.data?.attributes?.image?.data?.attributes?.url + ')'
+  "
+>
+
+</div>
+
+<div class="uk-section">
+  <div class="uk-container uk-container-small">
+    <h1>{{ article.data?.attributes?.title }}</h1>
+    <p>
+      <markdown [data]="article.data?.attributes?.content" ngPreserveWhitespaces>
+      </markdown>
+    </p>
+    <p>
+    </p>
+  </div>
+</div>

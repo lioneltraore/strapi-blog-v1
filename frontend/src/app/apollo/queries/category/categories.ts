@@ -4,6 +4,10 @@ export interface CategoryResponseArray {
   categories: CategoryArray;
 }
 
+export interface CategoryResponse {
+  data: CategoryData;
+}
+
 export interface CategoryArray {
   data: CategoryData[];
 }
