@@ -1,10 +1,31 @@
 import gql from "graphql-tag";
 
+export interface CategoryResponseArray {
+  categories: CategoryArray;
+}
+
+export interface CategoryArray {
+  data: CategoryData[];
+}
+
+export interface CategoryData {
+  id: string;
+  attributes: CategoryAttributes;
+}
+
+export interface CategoryAttributes {
+  name: string;
+}
+
 export const CATEGORIES_QUERY = gql`
-  query Categories {
+  query GetAllCategories {
     categories {
-      id
-      name
+      data {
+        id
+        attributes {
+          name
+        }
+      }
     }
   }
 `;

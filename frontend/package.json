@@ -21,6 +21,7 @@
     "@apollo/client": "^3.0.0",
     "apollo-angular": "^3.0.1",
     "graphql": "^16",
+    "jquery": "^3.6.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "uikit": "^3.14.3",
